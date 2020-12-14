@@ -1,0 +1,14 @@
+C:\Users\gustavo\source\repos\CrudWForms\CrudWForms\bin\Debug\CrudWForms.exe.config
+C:\Users\gustavo\source\repos\CrudWForms\CrudWForms\bin\Debug\CrudWForms.exe
+C:\Users\gustavo\source\repos\CrudWForms\CrudWForms\bin\Debug\CrudWForms.pdb
+C:\Users\gustavo\source\repos\CrudWForms\CrudWForms\obj\Debug\CrudWForms.csprojAssemblyReference.cache
+C:\Users\gustavo\source\repos\CrudWForms\CrudWForms\obj\Debug\CrudWForms.Cadastro.frmCadastroCliente.resources
+C:\Users\gustavo\source\repos\CrudWForms\CrudWForms\obj\Debug\CrudWForms.frmPrincipal.resources
+C:\Users\gustavo\source\repos\CrudWForms\CrudWForms\obj\Debug\CrudWForms.Properties.Resources.resources
+C:\Users\gustavo\source\repos\CrudWForms\CrudWForms\obj\Debug\CrudWForms.csproj.GenerateResource.cache
+C:\Users\gustavo\source\repos\CrudWForms\CrudWForms\obj\Debug\CrudWForms.csproj.CoreCompileInputs.cache
+C:\Users\gustavo\source\repos\CrudWForms\CrudWForms\obj\Debug\CrudWForms.exe
+C:\Users\gustavo\source\repos\CrudWForms\CrudWForms\obj\Debug\CrudWForms.pdb
+C:\Users\gustavo\source\repos\CrudWForms\CrudWForms\bin\Debug\FirebirdSql.Data.FirebirdClient.dll
+C:\Users\gustavo\source\repos\CrudWForms\CrudWForms\bin\Debug\FirebirdSql.Data.FirebirdClient.pdb
+C:\Users\gustavo\source\repos\CrudWForms\CrudWForms\obj\Debug\CrudWForms.csproj.CopyComplete
