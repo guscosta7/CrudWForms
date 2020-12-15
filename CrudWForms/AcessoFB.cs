@@ -27,7 +27,7 @@ public class AcessoFB
             try
             {
                 conexaoFireBird.Open();
-                string mSQL = "Select * from Clientes";
+                string mSQL = "Select * from " + '\u0022' + "clientes" + '\u0022';
                 FbCommand cmd = new FbCommand(mSQL, conexaoFireBird);
                 FbDataAdapter da = new FbDataAdapter(cmd);
                 DataTable dt = new DataTable();
@@ -52,7 +52,7 @@ public class AcessoFB
             try
             {
                 conexaoFireBird.Open();
-                string mSQL = "INSERT into " + '\u0022' + "clientes" + '\u0022' + " Values (" + cliente.ID + ",'" + cliente.Nome + "')" ;
+                string mSQL = "INSERT into " + '\u0022' + "clientes" + '\u0022' + " Values (" + cliente.ID + ",'" + cliente.Nome + "')";
 
                 FbCommand cmd = new FbCommand(mSQL, conexaoFireBird);
                 cmd.ExecuteNonQuery();
@@ -103,7 +103,7 @@ public class AcessoFB
                 while (dr.Read())
                 {
                     cliente.ID = Convert.ToInt32(dr[0]);
-                    cliente.Nome = dr[1].ToString();                    
+                    cliente.Nome = dr[1].ToString();
                 }
                 return cliente;
             }

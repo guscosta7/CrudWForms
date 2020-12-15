@@ -13,10 +13,23 @@ namespace CrudWForms.Cadastro
 {
     public partial class frmCadastroCliente : Form
     {
+
+        private static frmCadastroCliente frmCliente = null;
         public frmCadastroCliente()
         {
             InitializeComponent();
+            preencheGrid();
         }
+
+        public static frmCadastroCliente Instance()
+        {
+            if (frmCliente == null)
+            {
+                frmCliente = new frmCadastroCliente();
+            }
+            return frmCliente;
+        }
+
 
         private void btnSalvar_Click(object sender, EventArgs e)
         {
@@ -27,7 +40,7 @@ namespace CrudWForms.Cadastro
 
             try
             {
-                AcessoFB.fb_InserirDados(cliente);             
+                AcessoFB.fb_InserirDados(cliente);
                 MessageBox.Show("Cliente inserido com sucesso !", "Inserir", MessageBoxButtons.OK);
             }
             catch (Exception ex)
@@ -35,5 +48,26 @@ namespace CrudWForms.Cadastro
                 MessageBox.Show(ex.Message, "Erro", MessageBoxButtons.OK);
             }
         }
+        private void preencheGrid()
+        {
+            try
+            {
+                dgvClientes.DataSource = AcessoFB.fb_GetDados().DefaultView;
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message, "Erro", MessageBoxButtons.OK);
+            }
+        }
+
+      //  protected override void Dispose(bool disposing)
+       // {
+        //    if (disposing && (components != null))
+         //   {
+          //      components.Dispose();
+            //}
+            //base.Dispose(disposing);
+           // frmCliente = null;
+       // }
     }
 }
