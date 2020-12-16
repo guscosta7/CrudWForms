@@ -7,6 +7,7 @@ namespace CrudWForms.Cadastro
         /// Required designer variable.
         /// </summary>
         private System.ComponentModel.IContainer components = null;
+        private static frmCadastroCliente frmCliente = null;
 
         /// <summary>
         /// Clean up any resources being used.
@@ -19,6 +20,7 @@ namespace CrudWForms.Cadastro
                 components.Dispose();
             }
             base.Dispose(disposing);
+            frmCliente = null;
         }
 
         #region Windows Form Designer generated code

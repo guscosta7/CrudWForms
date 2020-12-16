@@ -14,7 +14,6 @@ namespace CrudWForms.Cadastro
     public partial class frmCadastroCliente : Form
     {
 
-        private static frmCadastroCliente frmCliente = null;
         public frmCadastroCliente()
         {
             InitializeComponent();
@@ -59,15 +58,5 @@ namespace CrudWForms.Cadastro
                 MessageBox.Show(ex.Message, "Erro", MessageBoxButtons.OK);
             }
         }
-
-      //  protected override void Dispose(bool disposing)
-       // {
-        //    if (disposing && (components != null))
-         //   {
-          //      components.Dispose();
-            //}
-            //base.Dispose(disposing);
-           // frmCliente = null;
-       // }
     }
 }
