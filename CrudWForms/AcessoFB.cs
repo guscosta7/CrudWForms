@@ -74,7 +74,7 @@ public class AcessoFB
             try
             {
                 conexaoFireBird.Open();
-                string mSQL = "DELETE from Clientes Where id= " + id;
+                string mSQL = "DELETE from " + '\u0022' + "clientes" + '\u0022' + " Where id= " + id;
                 FbCommand cmd = new FbCommand(mSQL, conexaoFireBird);
                 cmd.ExecuteNonQuery();
             }
@@ -96,7 +96,7 @@ public class AcessoFB
             try
             {
                 conexaoFireBird.Open();
-                string mSQL = "Select * from Clientes Where id = " + id;
+                string mSQL = "Select * from " + '\u0022' + "clientes" + '\u0022' + " Where id = " + id;
                 FbCommand cmd = new FbCommand(mSQL, conexaoFireBird);
                 FbDataReader dr = cmd.ExecuteReader();
                 Cliente cliente = new Cliente();
@@ -124,7 +124,11 @@ public class AcessoFB
             try
             {
                 conexaoFireBird.Open();
-                string mSQL = "Update Clientes set nome= '" + cliente.Nome + "'" + " Where id= " + cliente.ID;
+                string mSQL = "Update " + '\u0022' + "clientes" + '\u0022' +
+                    " set " + '\u0022' + "nome" + '\u0022' + " = '" + cliente.Nome + "'" +
+                    " Where " + '\u0022' + "id" + '\u0022' + " = " + cliente.ID;
+
+
                 FbCommand cmd = new FbCommand(mSQL, conexaoFireBird);
                 cmd.ExecuteNonQuery();
             }

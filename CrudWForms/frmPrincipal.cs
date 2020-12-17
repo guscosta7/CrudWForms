@@ -21,10 +21,10 @@ namespace CrudWForms
 
         private void clienteToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            frmCadastroCliente frmCadCliente = frmCadastroCliente.Instance();
-            frmCadCliente.MdiParent = this;
-            frmCadCliente.Show();
-            frmCadCliente.Activate();
+            frmCadastroCliente = frmCadastroCliente.Instance();
+            frmCadastroCliente.MdiParent = this;
+            frmCadastroCliente.Show();
+            frmCadastroCliente.Activate();
         }
     }
 }
